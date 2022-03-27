@@ -1,6 +1,6 @@
 <h1>家計簿</h1>
 <%= link_to "+ 新規作成", new_book_path, class:"btn btn-success" %>
-<table class="table table-striped">
+<table class="table table-sm">
     <tr>
         <th>年月</th>
         <th>区分</th>
@@ -15,9 +15,9 @@
         <td><%= book.category %></td>
         <td><%= book.amount %>万円</td>
         <td>
-            <%= link_to "詳細", book_path(book), class:"btn btn-info" %>
-            <%= link_to "編集", edit_book_path(book), class:"btn btn-warning" %>
-            <%= link_to "削除", book_path(book), method: "delete",data:{confirm:'本当に削除しますか？'}, class:"btn btn-danger" %>
+            <%= link_to "詳細", book_path(book), class:"btn btn-light btn-sm" %>
+            <%= link_to "編集", edit_book_path(book), class:"btn btn-light btn-sm" %>
+            <%= link_to "削除", book_path(book), method: "delete",data:{confirm:'本当に削除しますか？'}, class:"btn btn-outline-danger btn-sm" %>
         </td>
     </tr>
     <% end %>
