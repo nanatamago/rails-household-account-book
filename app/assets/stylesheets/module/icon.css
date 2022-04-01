@@ -1,0 +1,19 @@
+.icon {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.icon:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url('');
+  background-size: contain;
+  pointer-events: none;
+}

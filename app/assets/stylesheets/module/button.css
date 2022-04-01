@@ -1,0 +1,72 @@
+.button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
+}
+
+.is-button-add {
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 0.8rem 1.2rem;
+  width: 100px;
+  color: #ffffff;
+  background: #262d69;
+  border-radius: 18px;
+}
+
+.is-button-add span {
+  position: relative;
+  z-index: 1;
+}
+
+.is-button-add:before {
+  position: absolute;
+  top: 0;
+  left: calc(-150% + -5px);
+  width: 150%;
+  height: 500%;
+  content: '';
+  transition: all .3s ease-in-out;
+  transform: rotate(45deg) translateX(0) translateY(0);
+  background: #e54242;
+}
+
+.is-button-add:after {
+  position: absolute;
+  top: -400%;
+  right: calc(-150% + -5px);
+  width: 150%;
+  height: 500%;
+  content: '';
+  transition: all .3s ease-in-out;
+  transform: rotate(45deg) translateX(0) translateY(0);
+  background: #e54242;
+}
+
+.is-button-add:hover:before {
+  transform: rotate(45deg) translateX(0) translateY(-50%);
+}
+
+.is-button-add:hover:after {
+  transform: rotate(45deg) translateX(0) translateY(50%);
+}
+
+.is-button-edit {
+  display: block;
+  margin: 40px auto 0;
+}

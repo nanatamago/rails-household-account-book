@@ -1,0 +1,40 @@
+.is-search-month {
+  width: 68px;
+}
+
+.is-text-right {
+  text-align: right;
+}
+
+.is-text-center {
+  text-align: center;
+}
+
+.is-container-show {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.is-alert-success {
+  background: #69FFAE;
+}
+
+.is-alert-danger {
+  background: #FF6969;
+}
+
+.is-detail::before {
+  background-image: url(/assets/detail_icon.svg);
+}
+
+.is-delete::before  {
+  background-image: url(/assets/delete_icon.svg);
+}
+
+.is-edit::before  {
+  background-image: url(/assets/edit_icon.svg);
+}
+
+.is-back::before  {
+  background-image: url(/assets/arrow_icon.svg);
+}

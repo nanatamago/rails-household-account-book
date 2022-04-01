@@ -1,0 +1,49 @@
+.table {
+  width: 100%;
+  table-layout: fixed;
+	background: #ffffff;
+	box-sizing: border-box;
+}
+
+.table-head {
+  width: 40%;
+  padding: 8px;
+  font-weight: 700;
+  background: #efefef;
+}
+
+.table-head:nth-child(2) {
+  width: 35%;
+}
+
+.table-head:nth-child(3) {
+  width: 25%;
+}
+
+.table-content {
+  padding: 8px 4px;
+}
+
+.table-category {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1.6rem;
+}
+
+.table-sm {
+  display: block;
+  color: #898989;
+  font-size: 1.2rem;
+}
+
+.table-button {
+  text-align: center;
+}
+
+.table-icon {
+
+}
+
+.table-icon:not(:last-of-type) {
+  margin-right: 4px;
+}

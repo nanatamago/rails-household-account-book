@@ -1,30 +1,38 @@
-<h1>家計簿<%= type %></h1>
+<h1><%= type %></h1>
+<div class="container">
+<div class="form-buttons">
+  <%= link_to books_path, 'aria-label' => '戻る', class:"icon is-back" do %><% end %>
+</div>
 <%= form_with model:book, local:true, method:method do |f| %>
 <div class="form-group">
-  <label>年度</label>
-  <%= f.number_field:year, class: "form-control" %>
+  <label class="form-label">年度</label>
+  <%= f.number_field:year, class: "form-input search-item search-text" %>
 </div>
 
 <div class="form-group">
-  <label>月</label>
-  <%= f.number_field:month, class: "form-control" %>
+  <label class="form-label">月</label>
+  <%= f.number_field:month, class: "form-input search-item search-text" %>
 </div>
 
 <div class="form-group">
-  <label>区分</label>
-  <%= f.select:inout, [["収入",1],["支出",2]],  {}, {class: "form-control"} %>
+  <label class="form-label">区分</label>
+  <%= f.select:inout, [["収入",1],["支出",2]],  {}, {class: "form-input search-item search-text"} %>
 </div>
 
 <div class="form-group">
-  <label>科目</label>
-  <%= f.text_field:category, class: "form-control" %>
+  <label class="form-label">科目</label>
+  <%= f.text_field:category, class: "form-input search-item search-text" %>
 </div>
 
 <div class="form-group">
-  <label>金額</label>
-  <%= f.number_field:amount, class: "form-control" %>
+  <label class="form-label">金額</label>
+  <%= f.number_field:amount, class: "form-input search-item search-text" %>
 </div>
 
-<%= link_to "戻る", books_path, class: "btn btn-secondary" %>
-<%= f.submit type, class: "btn btn-primary" %>
+<%= button_tag type:'submit', class:"button is-button-add is-button-edit" do %>
+<span><%= type %></span>
 <% end %>
+
+<% end %>
+
+</div>

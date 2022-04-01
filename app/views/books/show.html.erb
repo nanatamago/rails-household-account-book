@@ -1,21 +1,25 @@
-<h1>家計簿詳細</h1>
-<table class="table table-striped">
+<h1>詳細</h1>
+<div class="container is-container-show">
+  <div class="buttons">
+    <%= link_to books_path, 'aria-label' => '戻る', class:"icon is-back" do %><% end %>
+    <%= link_to edit_book_path, 'aria-label' => '編集', class:"icon is-edit" do %><% end %>
+	</div>
+  <table>
     <tr>
-        <th>年月</th>
-        <td><%= @book.year %>年<%= @book.month %>月</td>
+      <th class="table-head is-text-center">年月</th>
+      <td class="table-content"><%= @book.year %>年<%= @book.month %>月</td>
     </tr>
     <tr>
-        <th>区分</th>
-        <td><%= @book.inout %></td>
+      <th class="table-head is-text-center">区分</th>
+      <td class="table-content"><%= @book.inout %></td>
     </tr>
     <tr>
-        <th>科目</th>
-        <td><%= @book.category %></td>
+      <th class="table-head is-text-center">科目</th>
+      <td class="table-content"><%= @book.category %></td>
     </tr>
     <tr>
-        <th>金額</th>
-        <td><%= @book.amount %>万円</td>
+      <th class="table-head is-text-center">金額</th>
+      <td class="table-content"><%= @book.amount %>万円</td>
     </tr>
-</table>
-<%= link_to "戻る", books_path, class: "btn btn-secondary" %>
-<%= link_to "編集", edit_book_path, class: "btn btn-primary" %>
+  </table>
+</div>

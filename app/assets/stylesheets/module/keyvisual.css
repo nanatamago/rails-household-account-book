@@ -1,0 +1,28 @@
+.keyvisual {
+	position: relative;
+	width: 89.3vw;
+  max-width: 380px;
+	height: 74.7vw;
+	max-height: 320px;
+	margin: 0 auto 40px;
+	background: linear-gradient(0deg, #E26D6D -15.19%, #DD8585 23.94%, #DC8B8B 36.99%, #DB9C9C 77.43%, #DBA2A2 108.73%);
+	border-radius: 18px;
+}
+
+.keyvisual-image {
+  position: absolute;
+  top: 6px;
+  left: -4vw;
+  width: 99.5vw;
+  max-width: 460px;
+  height: auto;
+}
+
+.keyvisual-title {
+	position: absolute;
+  top: 39px;
+  right: 20px;
+  width: 32.5vw;
+  max-width: 157px;
+  height: auto;
+}
